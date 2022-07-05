@@ -4,6 +4,6 @@ FROM apt-get update && apt-get upgrade -y
 
 RUN apt install nano
 
-EXPOSE 53
+EXPOSE 30053:53
 
 COPY . /etc/bind
