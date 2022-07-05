@@ -8,7 +8,7 @@ zone "localhost" {
 	file "/etc/bind/db.local";
 };
 
-zone "asa.br" { // Change to desired zone
+zone "prova.asa.br" { // Change to desired zone
 	type master;
 	file "/etc/bind/prova.asa.br";	// Change to zone file path
 	allow-transfer {0.0.0.0; };		// Change to Secondary DNS IP
