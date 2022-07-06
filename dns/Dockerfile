@@ -1,9 +1,9 @@
-FROM ubuntu/bind9:latest
+FROM ubuntu/bind9
 
-FROM apt-get update && apt-get upgrade -y
+RUN apt-get update && apt-get upgrade -y
 
-RUN apt install nano
+RUN apt install dnsutils -y
 
-EXPOSE 30053:53
+EXPOSE 53
 
-COPY . /etc/bind
+COPY ./etc/* /etc/bind
